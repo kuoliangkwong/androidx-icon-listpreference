@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_list_view_row_table_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:minHeight="40dp"
+    android:padding="10dp"
+    android:layout_marginLeft="10dp">
+
+    <RadioButton
+        android:id="@+id/image_list_view_row_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false" />
+
+    <ImageView
+        android:id="@+id/image_list_view_row_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+`
+        <TextView
+            android:id="@+id/image_list_view_row_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Auto Pause"
+            android:textSize="17sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/image_list_view_row_summary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textSize="15sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Fish will pause after a period of time." />
+    </LinearLayout>
+
+
+</LinearLayout>

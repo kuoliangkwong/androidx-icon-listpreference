@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources >
+
+    <string-array name="test_icon_type_name_list">
+        <item>"Test 1"</item>
+        <item>"Test 2"</item>
+        <item>"Test 3"</item>
+        <item>"Test 4"</item>
+    </string-array>
+
+    <string-array name="test_icon_type_summary_list">
+        <item>"Test 1 summary"</item>
+        <item>"Test 2 summary"</item>
+        <item>"Test 3 summary"</item>
+        <item>"Test 4 summary"</item>
+    </string-array>
+
+    <string-array name="test_icon_type_key_list">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+    </string-array>
+
+    <integer-array name="test_icon_type_thumbnail_list">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher_round</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher_round</item>
+    </integer-array>
+    
+</resources>

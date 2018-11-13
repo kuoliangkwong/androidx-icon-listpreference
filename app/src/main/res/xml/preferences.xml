@@ -1,0 +1,57 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:key="test_category"
+        android:title="Test category">
+
+        <com.kisionlab.lib.iconlistpreference.IconListPreference
+            android:defaultValue="0"
+            android:entries="@array/test_icon_type_name_list"
+            android:entryValues="@array/test_icon_type_key_list"
+            android:key="test_icon_type"
+            android:summary="Test Icon Summary"
+            android:title="Test Icon"
+            app:entrySummaries="@array/test_icon_type_summary_list"
+            app:entryIcons="@array/test_icon_type_thumbnail_list"/>
+
+        <com.kisionlab.lib.iconlistpreference.ClickableListPreference
+            android:defaultValue="0"
+            android:entries="@array/test_icon_type_name_list"
+            android:entryValues="@array/test_icon_type_key_list"
+            android:key="test_enabled_type"
+            android:summary="Test Enabled Summary"
+            android:title="Test Enabled"
+            app:entrySummaries="@array/test_icon_type_summary_list"
+            app:entryIcons="@array/test_icon_type_thumbnail_list"/>
+
+        <com.kisionlab.lib.iconlistpreference.ClickableListPreference
+            android:defaultValue="0"
+            android:entries="@array/test_icon_type_name_list"
+            android:entryValues="@array/test_icon_type_key_list"
+            android:key="test_disabled_type"
+            android:summary="Test Disabled Summary"
+            android:title="Test Disabled"
+            app:entrySummaries="@array/test_icon_type_summary_list"
+            app:entryIcons="@array/test_icon_type_thumbnail_list"/>
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/test_icon_type_name_list"
+            android:entryValues="@array/test_icon_type_key_list"
+            android:key="test_enabled_type"
+            android:summary="Normal ListPreference Summary"
+            android:title="Normal ListPreference" />
+
+        <SwitchPreferenceCompat
+            app:key="notifications"
+            app:title="Slow Motion"/>
+
+        <Preference
+            app:key="feedback"
+            app:title="Send feedback"
+            app:summary="Report technical issues or suggest new features"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

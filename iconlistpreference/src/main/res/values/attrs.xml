@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IconPreference">
+        <attr name="entryIcons" format="reference" />
+        <attr name="entrySummaries" format="reference" />
+    </declare-styleable>
+</resources>
