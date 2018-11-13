@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.preference.PreferenceManager
 import android.preference.SwitchPreference
 import android.util.Log
+import android.widget.Toast
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import com.kisionlab.lib.iconlistpreference.ClickableListPreference
@@ -37,6 +38,7 @@ class SettingsFragment: PreferenceFragmentCompat() {
         val testDisabledPref = findPreference("test_disabled_type") as ClickableListPreference
         testDisabledPref.onPreferenceClickListener = Preference.OnPreferenceClickListener {
             Log.v("kkl2", "testDisabledPref clicked")
+            Toast.makeText(context, "Disabled preference is clicked", Toast.LENGTH_SHORT).show()
             true
         }
         testDisabledPref.setEnabledViews(false)
