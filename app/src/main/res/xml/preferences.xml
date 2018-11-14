@@ -22,8 +22,7 @@
             android:key="test_enabled_type"
             android:summary="Test Enabled Summary"
             android:title="Test Enabled"
-            app:entrySummaries="@array/test_icon_type_summary_list"
-            app:entryIcons="@array/test_icon_type_thumbnail_list"/>
+            app:entrySummaries="@array/test_icon_type_summary_list" />
 
         <com.kisionlab.lib.iconlistpreference.ClickableListPreference
             android:defaultValue="0"
