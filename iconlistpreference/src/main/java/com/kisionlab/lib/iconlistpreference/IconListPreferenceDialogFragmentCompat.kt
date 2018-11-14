@@ -8,6 +8,11 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.preference.ListPreferenceDialogFragmentCompat
+import androidx.core.content.res.TypedArrayUtils.getResourceId
+import android.content.res.TypedArray
+import androidx.core.view.ViewCompat
+import com.kisionlab.lib.iconlistpreference.utils.ViewUtils
+
 
 class IconListPreferenceDialogFragmentCompat : ListPreferenceDialogFragmentCompat() {
     protected lateinit var iconListPreference: IconListPreference
@@ -87,6 +92,10 @@ class IconListPreferenceDialogFragmentCompat : ListPreferenceDialogFragmentCompa
                 false)
             holder = CustomHolder(row, position)
             row.tag = holder
+            row.isClickable = true
+            row.setBackgroundResource(
+                ViewUtils.getBackgroundFromAttr(context!!, R.attr.selectableItemBackground)
+            )
 
             row.setOnClickListener { v ->
                 v.requestFocus()

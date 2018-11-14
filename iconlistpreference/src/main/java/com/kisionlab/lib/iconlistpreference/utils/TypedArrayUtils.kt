@@ -1,4 +1,4 @@
-package com.kisionlab.lib.iconlistpreference
+package com.kisionlab.lib.iconlistpreference.utils
 
 import android.content.Context
 import android.util.TypedValue

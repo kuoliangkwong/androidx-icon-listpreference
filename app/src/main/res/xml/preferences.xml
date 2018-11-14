@@ -15,14 +15,22 @@
             app:entrySummaries="@array/test_icon_type_summary_list"
             app:entryIcons="@array/test_icon_type_thumbnail_list"/>
 
+        <com.kisionlab.lib.iconlistpreference.IconListPreference
+                android:defaultValue="0"
+                android:entries="@array/test_icon_type_name_list"
+                android:entryValues="@array/test_icon_type_key_list"
+                android:key="test_icon_type"
+                android:summary="Test Summary Summary"
+                android:title="Test Summary"
+                app:entrySummaries="@array/test_icon_type_summary_list"/>
+
         <com.kisionlab.lib.iconlistpreference.ClickableListPreference
             android:defaultValue="0"
             android:entries="@array/test_icon_type_name_list"
             android:entryValues="@array/test_icon_type_key_list"
             android:key="test_enabled_type"
             android:summary="Test Enabled Summary"
-            android:title="Test Enabled"
-            app:entrySummaries="@array/test_icon_type_summary_list" />
+            android:title="Test Enabled"/>
 
         <com.kisionlab.lib.iconlistpreference.ClickableListPreference
             android:defaultValue="0"
